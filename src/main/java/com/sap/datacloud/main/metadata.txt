@@ -1,0 +1,139 @@
+[   {
+    "providerId": 1,
+    "domainId": 1,
+    "metadata": {"storage":{
+                             "dataprovider": "d&b",
+                             "domain": "businessPartner",
+                             "endpointInfo": [
+                               {           
+            "mode":"file",
+            "fileType": "csv",
+                                           "delimeter": "|",
+                                           "category": "seed",
+                                           "encoding": "utf-8",
+                                           "recordlimit": "2000000",
+                                           "frequency": "onetime",   
+                                           "isCompressed": "true",
+                                           "compressionFormat": "gz",
+                                           "isBase64Encoded":"false",
+                                           "authenticationType": "basicAuthentication",
+                                           "fileDetails": [
+                                             {
+                                                          "fileName": ["sap_fullfile.*.gz"],
+                                                          "languageCode": "EN"
+                                             }
+                                           ],
+                                           "authenticationDetails": {
+                                             
+                                                            "basicAuthentication": {             
+                                                            "protocol": "ftp",
+                                                            "host": "ftp.dnb.com",
+                                                            "path": "/gets",
+                                                            "port" :"21",                                 
+                                                            "proxytype": "external",
+                                                            "userid": "sapam",
+                                                            "password": "DataCloud123!"
+                                                          
+                                             },
+                                             
+                                                          "tokenBasedAuthentication": {
+                                                            "protocol": "ftp",
+                                                            "host": "ftp.dnb.com",
+                                                            "path": "/gets/",
+                                                            "port" :"21",    
+                                                            "proxytype": "external",
+                                                            "tokenserviceurl": "https://sample.Outh.Server.Com/token",
+                                                            "tokenserviceuser": "abc",
+                                                            "tokenservicepassword": "abc",
+                                                            "clientkey": "",
+                                                            "clientsecret": "",
+                                                            "audience": "",
+                                                            "authurl": ""
+                                                          
+                                             },
+                                             
+                                                          "certificateBasedAuthentication": {
+                                                            "protocol": "ftp",
+                                                            "host": "ftp.dnb.com",
+                                                            "path": "/gets/",
+                                                            "port" :"21",    
+                                                            "proxytype": "internet",
+                                                            "keystorelocation": "mykeystore.Jks",
+                                                            "keystorepassword": "mykeystorepassword",
+                                                            "truststorelocation": "mytruststore.Jks",
+                                                            "truststorepassword": "mytruststorepassword"
+                                                          
+
+                                                          
+                                             }
+                                           }
+                               },
+                                {
+            "mode":"file",
+            "fileType": "csv",
+                                           "delimeter": "|",
+                                           "category": "delta",
+                                           "encoding": "utf-8",
+                                           "recordlimit": "2000000",
+                                           "frequency": "onetime",   
+                                           "isCompressed": "true",
+                                           "compressionFormat": "gz",
+                                           "isBase64Encoded":"false",
+                                           "authenticationType": "basicAuthentication",
+                                           "fileDetails": [
+                                             {
+                                                          "fileName": ["sap_changed.*.gz" , "sap_delete.*.gz"],
+                                                          "languageCode": "EN"
+                                             }
+                                           ],
+                                           "authenticationDetails": 
+                                             {
+                                  "basicAuthentication": {          
+                                                            "protocol": "ftp",
+                                                            "host": "ftp.dnb.com",
+                                                            "path": "/gets/",
+                                                            "port" :"21",                                 
+                                                            "proxytype": "external",
+                                                            "userid": "sapam",
+                                                            "password": "DataCloud123!"
+                                                          }
+                                             ,
+                                             
+                                                          "tokenBasedAuthentication": {
+                                                            "protocol": "ftp",
+                                                            "host": "ftp.dnb.com",
+                                                            "path": "/gets/",
+                                                            "port" :"22",    
+                                                            "proxytype": "external",
+                                                            "tokenserviceurl": "https://sample.Outh.Server.Com/token",
+                                                            "tokenserviceuser": "abc",
+                                                            "tokenservicepassword": "abc",
+                                                            "clientkey": "",
+                                                            "clientsecret": "",
+                                                            "audience": "",
+                                                            "authurl": ""
+                                                          
+                                                          
+                                             },
+                                             
+                                                          "certificateBasedAuthentication": {
+                                                            "protocol": "ftps",
+                                                            "host": "ftp.dnb.com",
+                                                            "path": "/gets/",
+                                                            "port" :"22",    
+                                                            "proxytype": "internet",
+                                                            "keystorelocation": "mykeystore.Jks",
+                                                            "keystorepassword": "mykeystorepassword",
+                                                            "truststorelocation": "mytruststore.Jks",
+                                                            "truststorepassword": "mytruststorepassword"
+                                           
+
+                                                          }
+                                             }
+                                           
+                               }
+                                           ]
+                               }
+                             
+}}
+]          
